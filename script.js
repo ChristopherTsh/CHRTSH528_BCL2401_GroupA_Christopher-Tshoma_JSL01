@@ -21,15 +21,15 @@ function validateSyntax() {
 
     
     let Name = input.substr(8);
-    let isUpperCase = Name.substr(0,1) === Name.substr(0,1).toUpperCase();
+    let isUpperCase = Name.substr(0,1) === Name.substr(0,1).toUpperCase() && Name !== '';
 
-    // Final validation result
+    // if statement that for v
     if (pet && isYear && isUpperCase ){
-        result = "Valid Syntax";
+        result = "Valid Syntax \uD83D\uDFE2";
         action = "valid";
 
     } else {
-        result = "Invalid Syntax";
+        result = "Invalid Syntax \uD83D\uDD34";
         action = "invalid";
     }
       function myFunction() {
