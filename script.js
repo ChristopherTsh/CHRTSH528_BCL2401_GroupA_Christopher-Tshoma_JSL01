@@ -2,7 +2,6 @@
 Function to check if the given year falls within the valid range (1989 - 2031).
 Returns true if the year is within the range, otherwise returns false.
 */
-
 function checkYear(year) {
     if (year < 1989 || year > 2031) {
         return false;
@@ -36,7 +35,7 @@ function validateSyntax() {
     let Name = input.substr(8);
     let isUpperCase = Name.substr(0,1) === Name.substr(0,1).toUpperCase() && Name !== '';
 
-    // if statement that for v
+    
     if (pet && isYear && isUpperCase ){
         result = "Valid Syntax \uD83D\uDFE2";
         action = "valid";
@@ -45,10 +44,7 @@ function validateSyntax() {
         result = "Invalid Syntax \uD83D\uDD34";
         action = "invalid";
     }
-      function myFunction() {
-        const list = document.getElementById("myDIV").classList;
-        list.add("invalid");
-      }
+   
 
 
     
