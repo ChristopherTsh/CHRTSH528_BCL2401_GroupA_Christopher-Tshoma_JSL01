@@ -1,3 +1,8 @@
+/*
+Function to check if the given year falls within the valid range (1989 - 2031).
+Returns true if the year is within the range, otherwise returns false.
+*/
+
 function checkYear(year) {
     if (year < 1989 || year > 2031) {
         return false;
@@ -7,6 +12,14 @@ function checkYear(year) {
         return false;
     }
 }
+
+/*
+Function to validate the syntax of a pet input.
+1. Checks if the input matches the pattern for pet name.
+2. Extracts the year from the input and checks its validity.
+3. Checks if the first character of the name is uppercase.
+4. Updates the result message and applies appropriate styling based on validation.
+*/
 
 function validateSyntax() {
     let input = document.getElementById('petInput').value;
